@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>One Piece Character Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🏴‍☠️ One Piece Character Chat</h1>
+  <p>Pilih karakter lalu ajak ngobrol</p>
+</header>
+
+<div class="container">
+
+  <div class="characters">
+    <div class="char" onclick="selectChar('Luffy')">
+      <img src="https://static.wikia.nocookie.net/onepiece/images/5/50/Monkey_D._Luffy_Anime_Post_Timeskip.png">
+      <p>Luffy</p>
+    </div>
+
+    <div class="char" onclick="selectChar('Zoro')">
+      <img src="https://static.wikia.nocookie.net/onepiece/images/6/6f/Roronoa_Zoro_Anime_Post_Timeskip.png">
+      <p>Zoro</p>
+    </div>
+
+    <div class="char" onclick="selectChar('Nami')">
+      <img src="https://static.wikia.nocookie.net/onepiece/images/f/f8/Nami_Anime_Post_Timeskip.png">
+      <p>Nami</p>
+    </div>
+
+    <div class="char" onclick="selectChar('Sanji')">
+      <img src="https://static.wikia.nocookie.net/onepiece/images/a/a5/Sanji_Anime_Post_Timeskip.png">
+      <p>Sanji</p>
+    </div>
+  </div>
+
+  <div class="chat-box">
+    <div id="chat">
+      <div class="ai">👋 Pilih karakter dulu ya!</div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="input" placeholder="Ketik pesan...">
+      <button onclick="send()">Kirim</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
